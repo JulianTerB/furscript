@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Consolas, monospace;
+    background: rgb(25,25,25);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    gap: 20px;
+    position: relative;
+}
+
+.window {
+    flex: 1;
+    background: rgb(35, 35, 35);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#editor {
+    flex: 1;
+    border-radius: 5px;
+}
+
+#output-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    font-family: Consolas, monospace;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    position: relative;
+    scrollbar-width: none;
+}
+
+#output-window::-webkit-scrollbar {
+    display: none;
+}
+
+#console-input {
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    font-family: Consolas, monospace;
+    width: 100%;
+    padding: 5px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: rgb(60, 60, 60);
+    transform: scale(1.05);
+}
+
+.debug {
+    color: grey;
+    font-size: 12px;
+}

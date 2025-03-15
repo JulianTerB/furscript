@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furscript Sandbox</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="window" id="editor-window">
+            <div id="editor"></div>
+        </div>
+        <div class="window" id="output-window">
+            <input type="text" id="console-input" placeholder="Type a command..." onkeypress="handleEnter(event)">
+            <div id="output"></div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button onclick="runFurscript()">Run</button>
+        <button onclick="debugFurscript()">Debug</button>
+    </div>
+    <script src="editor.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
