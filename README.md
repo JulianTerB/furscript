@@ -49,8 +49,6 @@ wait(2)  // Pauses for 2 seconds
 print("End")
 ```
 
-
-
 ### Debugging and Error Handling in Furscript
 
 In **Furscript**, debugging is made easy with clear error messages that help guide you through troubleshooting. When an issue arises:
